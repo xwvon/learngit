@@ -38,6 +38,10 @@ sudo git commit -m "对提交的描述"
 ```
 sudo git status
 ```
++ 从远程库fetch到更新
+```
+sudo git fetch origin
+```
 + 推送当前分支并建立与远程上游的跟踪
 ```
 sudo git push --set-upstream origin master
