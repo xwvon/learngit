@@ -4,4 +4,4 @@
 sudo ssh-keygen -t rsa -C "youremail@example.com"
 ```
 >+ 未找到命令需先安装openssh: sudo pacman -S openssh
-### 按默认创建将会在
+### 按默认创建将会在/root/.ssh/目录创建id.pnb
