@@ -7,7 +7,7 @@ sudo ssh-keygen -t rsa -C "email@example.com"
 ```
  sudo pacman -S openssh
 ```
-+ 按默认安装将会在/root/.ssh/目录下创建id_rsa和id_rsa.pnb两个文件,其中id_rsa是私钥,id_rsa.pnb是公钥
++ 按默认安装将会在/root/.ssh/目录下创建id_rsa和id_rsa.pub两个文件,其中id_rsa是私钥,id_rsa.pub是公钥
 ### 在GitHub仓库中添加本机的KEY
 + 在SSH Keys页面点击"New SSH key"，填上任意的Title，并把id_rsa.pnb文件的内容复制到Key文本框，点击"Add SSH key"完成添加
 ### 关联GitHub上的远程仓库
