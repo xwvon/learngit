@@ -1,0 +1,2 @@
+# Git中AutoCRLF与SafeCRLF换行符的问题
+最近发现在使用**window10**用git命令行提交代码的时候会被转换成CRLF
