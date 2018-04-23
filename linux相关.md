@@ -43,7 +43,7 @@ mv CentOS-Base.repo CentOS-Base.repo.backup
 ```
 wget http://mirrors.163.com/centos/5.6/Centos-base.repo
 ```
->+ 可能由于各大开源镜像站对低版本的centos不再提供yum源的支持，可以把CentOS-Base.repo里的mirrorlist一行注释，并把baseurl一行中http://centos/org改为http://vault.centos.org，最后还需要把`$releasever`改为相应的版本
+>+ 可能由于各大开源镜像站对低版本的centos不再提供yum源的支持，可以把CentOS-Base.repo里的mirrorlist一行注释，并把baseurl一行中`http://centos/org`改为`http://vault.centos.org`，最后还需要把`$releasever`改为相应的版本
 4. 生成缓存
 ```
 yum clean all
