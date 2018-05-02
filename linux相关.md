@@ -49,3 +49,27 @@ wget http://mirrors.163.com/centos/5.6/Centos-base.repo
 yum clean all
 yum makecache
 ```
+## 源码编译安装软件方式
+### 1. 配置(config/configure)
+配置操作主要是指定软件的安装目录，配置文件的路径，解决依赖关系，通用数据存储位置等等
+>指定安装路径：--prefix=path  
+>需要依赖的路径：--with-PACKAGE名=包所在的路径  
+>不需要依赖：--without-PACKAGE名
+```
+# ./configure --prefix=/usr/local/
+```
+### 2. 编译(make)
+```
+# make
+```
+### 3. 安装(make install)
+```
+make install
+```
+## 二进制包安装软件方式(**rpm**)
+**rpm**相关命令：
++ rpm -qa|grep 关键词 #查询软件安装状态
++ rpm -e 关键词 [--nodeps] #不安装依赖
++ rpm -ivh 二进制包名称 #安装二进制包并显示安装过程
++ rpm -Uvh 软件名 #升级软件
++ rpm -qf 文件路径 #查询某个文件属于哪个包
